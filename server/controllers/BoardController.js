@@ -1,6 +1,8 @@
-import _boardService from '../services/BoardService'
+import BoardService from '../services/BoardService'
 import express from 'express'
 import { Authorize } from '../middleware/authorize.js'
+
+let _boardService = new BoardService().repository
 
 //PUBLIC
 export default class BoardsController {
@@ -14,6 +16,8 @@ export default class BoardsController {
       .delete('/:id', this.delete)
       .use(this.defaultRoute)
   }
+
+  // this is pretty neat
 
   defaultRoute(req, res, next) {
     next({ status: 404, message: 'No Such Route' })

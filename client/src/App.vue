@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class="bg-dark"
-    <router-view/>
+  <div id="app" class="bg-primary">
+    <router-view />
   </div>
 </template>
 

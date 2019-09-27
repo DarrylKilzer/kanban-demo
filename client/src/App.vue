@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="bg-primary">
+    <h1>KANBANNED</h1>
     <router-view />
   </div>
 </template>

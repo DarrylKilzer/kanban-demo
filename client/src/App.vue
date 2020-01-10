@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="bg-dark">
-    <h1>KANBANNED</h1>
+    <h1>KANBANNED!</h1>
     <router-view />
   </div>
 </template>
